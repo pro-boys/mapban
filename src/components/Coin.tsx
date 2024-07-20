@@ -15,12 +15,12 @@ export const Coin: React.FC<Props> = ({team1, team2}) => {
     const [isRep, setRep] = useState<boolean>(false);
     const [team, setTeam] = useState<boolean>(false);
     const flipCoin = () => {
-      const prob = Math.floor(Math.random() * 2) + 1;
+      const prob = Math.floor(Math.random() * 10) + 1;
       console.log(prob);
       setFlip(true);
       setRep(true);
       setTimeout(() => {
-        setCImg(prob === 1? team1coin: team2coin);
+        setCImg(prob % 2 !== 0? team1coin: team2coin);
         setTeam(prob === 1? true: false);
         setFlip(false);
       }, 500)
