@@ -13,6 +13,11 @@
   --width-container: 1200px;
   --width-s-container: 2000px;
   --height-container: 320px;
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: rgb(26, 2, 2);
+  --stroke-color: lightblue;
 }
 
 *{
@@ -165,7 +170,6 @@ body{
 }
   
   .hero-section{
-    margin-top: -500px;
     align-items: flex-start;
     background: #4e54c8;  
     background-image: url("https://i.ibb.co/LRXHq4T/background.jpg");

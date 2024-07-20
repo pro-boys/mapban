@@ -4,13 +4,15 @@ import { getTeam } from '../../data/teams';
 
 interface Props {
     numMaps: number,
-    setNumMaps: any;
-    team: boolean;
+    setNumMaps: any,
+    team: boolean,
     setTeam: any,
+    team1: string | null,
+    team2: string | null,
     map: typeof maps[0],
 }
 
-export const VMaps: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, map}) => {
+export const VMaps: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, map, team1, team2}) => {
     const [isSelected, setSelected] = useState<boolean>(false);
     const [isBanned, setBanned] = useState<boolean>(false);
     const [steam, getSteam] = useState<string>("");
@@ -27,7 +29,7 @@ export const VMaps: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, map}
                     setSelected(!isSelected);
                     setTeam(!team);
                     (numMaps > 5 || numMaps < 4) ? setBanned(true): setBanned(false);
-                    getSteam(getTeam(team));
+                    getSteam(getTeam(team, team1, team2));
                 }}>
                     <span className='action-content'>{(numMaps > 5 || numMaps < 4) ? "Ban" : "Select"}</span>
                 </button>
