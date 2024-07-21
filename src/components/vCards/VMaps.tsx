@@ -17,7 +17,7 @@ export const VMaps: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, map,
     const [isBanned, setBanned] = useState<boolean>(false);
     const [steam, getSteam] = useState<string>("");
   return (
-    <div className={`card ${map.istwo ? "row-2": ""}`}>
+    <div key={map.name} className={`card ${map.istwo ? "row-2": ""}`}>
         <div className="card__background" style={{backgroundImage: `url(${map.image})`, filter: (isBanned? "brightness(0.5) saturate(0.2) contrast(0.5)":"brightness(0.75) saturate(1.2) contrast(0.95)")}}></div>
             <div className="card__content">
                 <p className="card__category">{map.name}</p>

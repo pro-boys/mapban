@@ -21,7 +21,7 @@ export const maps = [
     },
     {
         "name": "Ascent",
-        "istwo": false,
+        "istwo": (window.innerWidth > 768 && window.innerWidth < 1280)? true: false,
         "image": "https://beebom.com/wp-content/uploads/2024/01/Ascent-Map-Valorant-.jpg?quality=75&strip=all",
     },
     {

@@ -11,7 +11,7 @@
   --spacing-xl: 32px;
   --spacing-xxl: 64px;
   --width-container: 1200px;
-  --width-s-container: 2000px;
+  --width-l-container: 2000px;
   --height-container: 320px;
   --x-offset: -0.0625em;
   --y-offset: 0.0625em;
@@ -200,25 +200,12 @@ body{
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: var(--spacing-s);
     grid-row-gap: var(--spacing-s);
-    max-width: var(--width-s-container);
+    max-width: var(--width-l-container);
     width: 100%;
-  }
-  
-
-  @media(min-width: 540px){
-    .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
-  @media(min-width: 960px){
-    .card-grid{
-      grid-template-columns: repeat(5, 1fr); 
-    }
   }
 
   .row-2 {
-    left: 90px;
+    left: 0;
   }
 
   
@@ -231,8 +218,8 @@ body{
   .card:before{
     content: '';
     display: block;
-    padding-bottom: 150%;
-    width: 100%;
+    padding-bottom: 100%;
+    width: 50%;
   }
   
   .card__background{
@@ -251,14 +238,6 @@ body{
     transition: 
       filter 200ms linear,
       transform 200ms linear;
-  }
-
-  .card:last-child:nth-child(5n - 1) {
-    grid-column-end: -3;
-  }
-  
-  .card:nth-last-child(2):nth-child(5n + 1) {
-    grid-column-end: 3;
   }
   
   .card__content{
@@ -287,7 +266,7 @@ body{
   }
 
   .action-button {
-    top: 320px;
+    top: 250px;
     position: absolute;
     width: 200px;
     height: 40px;
@@ -295,6 +274,7 @@ body{
     border: 2px solid #ffff;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 40px;
   }
 
   .action-content {
@@ -304,4 +284,61 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Exo', sans-serif;
+  }
+
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+  @media(min-width: 768px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .card:before{
+      content: '';
+      display: block;
+      padding-bottom: 130%;
+      width: 100%;
+    }
+
+    .row-2 {
+      left: 90px;
+    }
+
+    .action-button {
+      margin-left: 0;
+    }
+  }
+  
+  @media(min-width: 1280px){
+    .card-grid{
+      grid-template-columns: repeat(5, 1fr); 
+    }
+
+    .card:last-child:nth-child(5n - 1) {
+      grid-column-end: -3;
+    }
+    
+    .card:nth-last-child(2):nth-child(5n + 1) {
+      grid-column-end: 3;
+    }
+
+    .row-2 {
+      left: 90px;
+    }
+
+    .card:before{
+      content: '';
+      display: block;
+      padding-bottom: 150%;
+      width: 100%;
+    }
+
+    .action-button {
+      top: 320px;
+      margin-left: 0;
+    }
   }
