@@ -1,37 +1,59 @@
+import sunset from '../images/sunset.png'
+import sunsetBanned from '../images/sunset-banned.png'
+import bind from '../images/bind.png'
+import bindBanned from '../images/bind-banned.png'
+import icebox from '../images/icebox.png'
+import iceboxBanned from '../images/icebox-banned.png'
+import lotus from '../images/lotus.png'
+import lotusBanned from '../images/lotus-banned.png'
+import ascent from '../images/ascent.png'
+import ascentBanned from '../images/ascent-banned.png'
+import haven from '../images/haven.png'
+import havenBanned from '../images/haven-banned.png'
+import abyss from '../images/abyss.png'
+import abyssBanned from '../images/abyss-banned.png'
+
 export const maps = [
     {
         "name": "Sunset",
+        "image": sunset,
         "istwo": false,
-        "image": "https://staticg.sportskeeda.com/editor/2023/08/5bbaf-16931379207825-1920.jpg",
+        "banimage": sunsetBanned,
     },
     {
         "name": "Bind",
+        "image": bind,
         "istwo": false,
-        "image": "https://staticg.sportskeeda.com/editor/2024/04/cd4c5-17143833102092-1920.jpg",
+        "banimage": bindBanned,
     },
     {
         "name": "IceBox",
+        "image": icebox,
         "istwo": false,
-        "image": "https://admin.esports.gg/wp-content/uploads/2024/01/VALORANT-Icebox-968x544.jpg",
+        "banimage": iceboxBanned,
     },
     {
         "name": "Lotus",
+        "image": lotus,
         "istwo": false,
-        "image": "https://admin.esports.gg/wp-content/uploads/2024/01/VALORANT-Lotus-map-968x544.jpg",
+        "banimage": lotusBanned,
     },
     {
         "name": "Ascent",
-        "istwo": (window.innerWidth > 768 && window.innerWidth < 1280)? true: false,
-        "image": "https://beebom.com/wp-content/uploads/2024/01/Ascent-Map-Valorant-.jpg?quality=75&strip=all",
+        "image": ascent,
+        "istwo": (window.innerWidth > 730 && window.innerWidth < 1280)? true: false,
+        "banimage": ascentBanned,
     },
     {
         "name": "Haven",
+        "image": haven,
         "istwo": true,
-        "image": "https://staticg.sportskeeda.com/editor/2020/07/85ebb-15936944284859-800.jpg",
+        "banimage": havenBanned,
     },
     {
         "name": "Abyss",
+        "image": abyss,
         "istwo": true,
-        "image": "https://admin.esports.gg/wp-content/uploads/2024/06/VALORANT-Abyss-overview-968x544.jpg",
+        "banimage": abyssBanned,
     },
 ]

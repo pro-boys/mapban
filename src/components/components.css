@@ -42,8 +42,9 @@ nav a {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    justify-content: space-around;
-    padding: var(--spacing-xxl) var(--spacing-l);
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
     z-index: 1;
     background: #000000;  
     background-image: url("https://wallpaper.forfun.com/fetch/03/03e808a95d71b1045bc1dc12b703aa2a.jpeg?download=video_game-valorant-brimstone_valorant-1026522.jpeg");
@@ -78,8 +79,11 @@ nav a {
 
 .drop-container {
     display: flex;
+    position: relative;
     flex-direction: row;
+    align-items: center;
     gap: 100px;
+    z-index: 3;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -117,7 +121,7 @@ nav a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Links inside the dropdown */
@@ -158,6 +162,14 @@ nav a {
     width: 80%; 
     max-width: 500px; 
     perspective: 1000px; 
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.coin-container h3 {
+    padding: 10px 10px;
 }
 
 .coin { 
@@ -188,8 +200,7 @@ nav a {
 }
 
 .coin-flip { 
-    animation: spin 1s 
-        cubic-bezier(0.4, 2.5, 0.6, 0.5); 
+    animation: spin 0.7s cubic-bezier(1, 2.5, 0.58, 1.5) infinite
 } 
 
 #toss-button { 
@@ -223,6 +234,7 @@ nav a {
     gap: 10px;
 }
 
+
 @keyframes spin { 
     0% { 
         transform: rotateY(0deg); 
@@ -237,7 +249,8 @@ nav a {
         width: 100%;
         background-size: cover;
         background-position: 100%;
-        padding: var(--spacing-xxl) var(--spacing-l);
+        margin-top: 9%;
+        padding: 0;
     }
 
     .drop-container {

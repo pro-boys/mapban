@@ -57,6 +57,19 @@ export const Home = () => {
             </div>
             </div>
         <Coin team1={team1} team2={team2} />
+
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </div>
   )
 }

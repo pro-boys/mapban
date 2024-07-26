@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { getTeam } from '../data/teams';
 import { maps } from '../data/maps';
-import {VMaps} from './vCards/VMaps';
+import {VMapsBo3} from './vCards/VMapsBo3';
 import { useSearchParams } from 'react-router-dom';
 
 export const Cards = () => {
@@ -18,7 +18,7 @@ export const Cards = () => {
 
                 {maps.map(x => {
                     return (
-                        <VMaps numMaps={numMaps} setNumMaps={setNumMaps} map={x} setTeam={setTeam} team={team} team1={team1} team2={team2}/>
+                        <VMapsBo3 numMaps={numMaps} setNumMaps={setNumMaps} map={x} setTeam={setTeam} team={team} team1={team1} team2={team2}/>
                     )
                 })}
 
@@ -107,6 +107,19 @@ export const Cards = () => {
                 </div>
                 */}
         </div>
+
+        <ul className="circles" style={{padding: (window.innerWidth > 730 && window.innerWidth < 1280) ? '0': '130px 0px'}}>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </section>
   )
 }
