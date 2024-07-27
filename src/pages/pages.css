@@ -10,7 +10,7 @@
   --spacing-l: 24px;
   --spacing-xl: 32px;
   --spacing-xxl: 75px;
-  --spacing-xxxl: 150px;
+  --spacing-xxxl: 165px;
   --width-container: 1200px;
   --width-l-container: 2000px;
   --height-container: 320px;
@@ -256,7 +256,7 @@ body{
   .card__heading{
     color: var(--text-lighter);
     position: relative;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     line-height: 1.4;
     justify-content: center;
