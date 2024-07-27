@@ -18,6 +18,18 @@ export const Bo1 = () => {
                 return (<FlexCard numMaps={numMaps} setNumMaps={setNumMaps} map={x} setTeam={setTeam} team={team} team1={team1} team2={team2} mode='bo1'/>)
             })}
         </div>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </section>
   )
 }

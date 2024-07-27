@@ -10,8 +10,8 @@ import ascent from '../images/ascent.png'
 import ascentBanned from '../images/ascent-banned.png'
 import haven from '../images/haven.png'
 import havenBanned from '../images/haven-banned.png'
-import abyss from '../images/abyss.png'
-import abyssBanned from '../images/abyss-banned.png'
+import split from '../images/split.png'
+import splitBanned from '../images/split-banned.png'
 
 export const maps = [
     {
@@ -51,9 +51,9 @@ export const maps = [
         "banimage": havenBanned,
     },
     {
-        "name": "Abyss",
-        "image": abyss,
+        "name": "Split",
+        "image": split,
         "istwo": true,
-        "banimage": abyssBanned,
+        "banimage": splitBanned,
     },
 ]

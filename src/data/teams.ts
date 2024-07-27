@@ -1,18 +1,18 @@
 export const teams = [
     {
-        "name": "Team Chandran",
+        "name": "Team Mavericks",
     },
     {
-        "name": "Team Babu",
+        "name": "Ranga's Renegades",
     },
     {
-        "name": "Team Rayan",
+        "name": "Devil's Spartans",
     },
     {
-        "name": "Team Sunimon",
+        "name": "Smugglers",
     },
     {
-        "name": "Team Kevin",
+        "name": "Ascendancy Assassins",
     },
 ];
 
