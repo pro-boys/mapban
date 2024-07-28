@@ -11,6 +11,7 @@
   --spacing-xl: 32px;
   --spacing-xxl: 75px;
   --spacing-xxxl: 165px;
+  --spacing-4xl: 180px;
   --width-container: 1200px;
   --width-l-container: 2000px;
   --height-container: 320px;
@@ -345,10 +346,18 @@ body{
     .hero-section {
       padding: var(--spacing-xxxl) var(--spacing-m);
     }
+
+    .hero-section {
+      padding: var(--spacing-xxxl) var(--spacing-m);
+    }
   }
 
   @media(min-width: 1500px){
     .action-button {
       left: 25%;
+    }
+
+    .hero-section {
+      padding: var(--spacing-4xl) var(--spacing-m);
     }
   }
