@@ -18,11 +18,11 @@ export const Cards: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, map,
     const [isBanned, setBanned] = useState<boolean>(false);
     const [steam, getSteam] = useState<string>("");
   return (
-    <div className='flexcard' style={{backgroundImage: (isBanned ? `url(${map.banimage})`: `url(${map.image})`), filter: (isBanned ? "grayscale(100%)": "contrast(90%)")}}>
+    <div className='flexcard' style={{backgroundImage: (isBanned ? `url(${map.banimage})`: `url(${map.image})`), filter: (isBanned ? "grayscale(80%)": "contrast(90%)")}}>
         <h2 className='flexcard-head'>{map.name}</h2>
         <br />
         {isSelected ? <h3 className="flexcard-content">{isBanned ? "Banned": "Selected"} by {steam}</h3>: <br/>}
-        {(!isSelected && numMaps < 2? <h3 className="flexcard-content">Decider Map.</h3>: <><br/><br/></>)}
+        {(!isSelected && numMaps < 2? <h3 className="flexcard-content">Decider Map </h3>: <><br/><br/></>)}
         <br />
         <br />
         <br />

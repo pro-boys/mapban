@@ -16,9 +16,9 @@ import splitBanned from '../images/split-banned.png'
 export const maps = [
     {
         "name": "Sunset",
-        "image": sunset,
+        "image": "https://raw.githubusercontent.com/pro-boys/mapban/main/src/images/sunset.png",
         "istwo": false,
-        "banimage": sunsetBanned,
+        "banimage": "https://github.com/pro-boys/mapban/blob/main/src/images/sunset-banned.png?raw=true",
     },
     {
         "name": "Bind",
