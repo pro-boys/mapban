@@ -1,5 +1,7 @@
+/*
 import sunset from '../images/sunset.png'
 import sunsetBanned from '../images/sunset-banned.png'
+*/
 import bind from '../images/bind.png'
 import bindBanned from '../images/bind-banned.png'
 import icebox from '../images/icebox.png'
