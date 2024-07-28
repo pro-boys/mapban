@@ -345,3 +345,9 @@ body{
       padding: var(--spacing-xxxl) var(--spacing-m);
     }
   }
+
+  @media(min-width: 1600px){
+    .action-button {
+      left: 15%;
+    }
+  }
