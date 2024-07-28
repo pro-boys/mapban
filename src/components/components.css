@@ -234,6 +234,95 @@ nav a {
     gap: 10px;
 }
 
+.main {
+    padding: var(--spacing-xxxl) var(--spacing-m);
+    background-image: url("https://i.ibb.co/LRXHq4T/background.jpg");
+    background-position: 100%;
+}
+
+.main-heading {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: #eceff1;
+    z-index: 5;
+    position: sticky;
+}
+
+.flexcards {
+    position: relative;
+}
+
+.flexcards-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flexcard {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 8rem;
+    padding: 1.5em 1.0em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+    gap: 2rem;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    background-size: cover;
+    mix-blend-mode:normal;
+    background-position: center;
+    border: solid 1px white;
+    border-radius: var(--spacing-l);
+}
+
+
+.flexcard-head {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #000000;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    z-index: 2;
+    text-align: center;
+    border-radius: 9px;
+    text-transform: uppercase;
+}
+
+.flexcard-content {
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: .05em;
+    text-shadow: 
+      2px 2px 0px #1b1919, 
+      5px 5px 0px rgba(8, 8, 8, 0.2);
+}
+
+.cta-button {
+    display: block;
+    align-self: end;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffffff;
+    padding: 0.7em;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
 
 @keyframes spin { 
     0% { 
