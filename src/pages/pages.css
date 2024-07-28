@@ -274,6 +274,7 @@ body{
     border-radius: 10px;
     cursor: pointer;
     left: 15%;
+    justify-content: center;
   }
 
   .action-content {
@@ -349,5 +350,6 @@ body{
   @media(min-width: 1500px){
     .action-button {
       left: 25%;
+      width: 200px;
     }
   }
