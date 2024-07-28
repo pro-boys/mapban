@@ -273,7 +273,7 @@ body{
     border: 2px solid #ffff;
     border-radius: 10px;
     cursor: pointer;
-    left: 40px;
+    left: 15%;
   }
 
   .action-content {
@@ -311,7 +311,7 @@ body{
       position: relative;
       top: 180px;
       margin-left: 0;
-      left: 0;
+      left: 15%;
     }
 
     .hero-section {
@@ -339,7 +339,6 @@ body{
       top: 260px;
       left: 0;
       width: 135px;
-      margin-left: 0.5%;
     }
 
     .hero-section {
