@@ -346,7 +346,7 @@ body{
     }
   }
 
-  @media(min-width: 1600px){
+  @media(min-width: 1500px){
     .action-button {
       left: 25%;
     }
