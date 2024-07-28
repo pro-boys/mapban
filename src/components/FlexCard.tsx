@@ -29,14 +29,19 @@ export const FlexCard: React.FC<Props> = ({numMaps, setNumMaps, setTeam, team, m
                         setNumMaps(numMaps - 1);
                         setSelected(!isSelected);
                         setTeam(!team);
-                        (mode === "bo1" ? 
+                        (mode === "bo5"?
+                            (numMaps < 4 ? setBanned(true): setBanned(false))
+                            :
+                            (
+                            mode === "bo1" ? 
                             (numMaps > 1 && setBanned(true))
                             :
                             (numMaps > 5 || numMaps < 4) ? setBanned(true): setBanned(false)
+                            )
                         );
                         getSteam(getTeam(team, team1, team2));
                     }}>
-                        <span className='action-content'>{mode === "bo3"? ((numMaps > 5 || numMaps < 4) ? "Ban" : "Select"): "Ban"}</span>
+                        <span className='action-content'>{mode === "bo3"? ((numMaps > 5 || numMaps < 4) ? "Ban" : "Select"): (mode === "bo5"? ((numMaps < 4) ? "Ban": "Select"): "Ban")}</span>
                     </button>
                     }
             </div>
